@@ -6,7 +6,7 @@ This case shows how an initial trading idea was tested, refined, and filtered in
 To test and refine a simple price action strategy, and identify the market conditions in which it performs more reliably.
 
 ## Terminology
-This research uses several Price Action concepts and abbreviated candlestick timeframe terms:
+This case uses several Price Action concepts and abbreviated candlestick timeframe terms:
 
 - **FVG (Fair Value Gap)** — a support/resistance zone in Price Action
 - **Order Block (OB)** — a candlestick pattern in Price Action used as confirmation of a support/resistance zone
@@ -18,10 +18,57 @@ The initial strategy idea was based on the following setup:
 
 **Newest 4H FVG + 1H Order Block**
 
+The strategy detects the newest support or resistance zone, then looks for the first retest of that zone together with the appearance of confirmation.
+
+From this baseline idea, various conditions and filters are applied to identify the most effective operating conditions for the trading system.
+
+## Manual Validation and Hand Labels
+Commonly I use period of 10 years for my trading strategies. In this strategy I will use 10 years period as well.
+I connect this trading strategy to my infrastructure, it doing screenshot of chart for every situation of our Trading Strategy.
+![Alt text](EURUSD.tickstory_H1_2021.09.15_06_00_N200_S_L0.bmp)
+
+- visual review of setups
+- image collection / trade examples
+- manual labeling process
+- labeled sample size
+- year coverage
+- match rate / validation outcome
+
+## Why the Idea Was Worth Developing
+- manual review showed that the setup had recognizable structure
+- results were not random from a discretionary point of view
+- this justified moving from visual pattern recognition to formal rule design
+
 ## Observation
 Market behavior differs across trading sessions.
 
-To reduce noise and build a more stable trading system, it makes sense to apply additional conditions. One of the key observations was that a Order Block formed during the **London open** or **New York open** may carry higher significance.
+To reduce noise and build a more stable trading system, it makes sense to apply additional conditions. One of the key observations was that an Order Block formed during the **London open** or **New York open** may carry greater significance.
 
-These periods are typically associated with higher volatility and stronger participation. As a result, when confirmation appears during these sessions, the setup may have a higher probability of success.
+These periods are typically associated with higher volatility and stronger market participation. As a result, when confirmation appears during these sessions, the setup may have a higher probability of success.
 
+Another important observation was related to trade exits. For better stability and predictability, it is preferable to use a clear and static target rather than a discretionary one.
+
+In this strategy, a suitable target is the **high extremum of the support zone** for long trades, and the **low extremum of the resistance zone** for short trades. In other words, once the newest zone is identified and then successfully retested, the corresponding extremum of that zone can be used as the trade target.
+
+## Baseline Performance
+
+## Trade-Level Feature Infrastructure
+- CSV per trade
+- structured features
+- analysis-ready dataset
+
+## Filter 1: Trouble Area Before Target
+
+## Filter 2: RR to Extremum
+
+## Result: Higher Win Rate, but Weak Expectancy
+
+## Next Research Direction: Improving Expectancy
+- limit entries
+- alternative execution logic
+
+## Additional Research Branches
+- second Order Block entry
+- first-touch Order Block entry
+
+## Key Takeaways
