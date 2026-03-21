@@ -11,6 +11,7 @@ This case uses several Price Action concepts and abbreviated candlestick timefra
 
 - **FVG (Fair Value Gap)** - a support/resistance zone in Price Action
 - **Order Block (OB)** - a candlestick pattern in Price Action used as confirmation of a support/resistance zone
+- **Risk-Reward Ratio (RR)** - the ratio of expected reward to predefined risk for an trade
 - **4H** - 4-hour candlestick timeframe
 - **1H** - 1-hour candlestick timeframe
 
@@ -159,9 +160,66 @@ Another important observation was related to trade exits. For better stability a
 
 In this strategy, a suitable target is the **high extremum of the support zone** for long trades, and the **low extremum of the resistance zone** for short trades. In other words, once the newest zone is identified and then successfully retested, the corresponding extremum of that zone can be used as the trade target.
 
+These two observations were applied to Strategy and used as part of the baseline system design. The next step was to review the baseline performance.
+
 ## Baseline Performance
 
+Summary report for **2015-2026**:
 
+| Metric | Combined Result |
+|---|---:|
+| Backtest Coverage | 2015.01 - 2026 (split baseline) |
+| Total Net Profit | -$5,867.56 |
+| Gross Profit | $152,802.36 |
+| Gross Loss | -$158,669.92 |
+| Profit Factor | 0.96 |
+| Expected Payoff | -$20.52 |
+| Total Trades | 291 |
+| Profit Trades | 136 |
+| Loss Trades | 155 |
+| Win Rate | 46.74% |
+| Average Profit Trade | $1,123.55 |
+| Average Loss Trade | -$1,023.68 |
+
+<p align="center">
+  <img src="images/strategy-research-and-development-case/baseline_report_2015-2022.11.png" width="420"><br>
+  <em>Figure 1. Baseline report preview for 2015.01-2022.11.</em>
+</p>
+
+<p align="center">
+  <img src="images/strategy-research-and-development-case/baseline_report_2022.11-2026.png" width="420"><br>
+  <em>Figure 2. Baseline report preview for 2022.11-2026.</em>
+</p>
+
+<details>
+  <summary><b>View full-size baseline report: 2015.01-2022.11</b></summary>
+  <br>
+  <p align="center">
+    <img src="images/strategy-research-and-development-case/baseline_report_2015-2022.11.png" width="1000"><br>
+    <em>Full-size baseline report for 2015.01-2022.11.</em>
+  </p>
+</details>
+
+<details>
+  <summary><b>View full-size baseline report: 2022.11-2026</b></summary>
+  <br>
+  <p align="center">
+    <img src="images/strategy-research-and-development-case/baseline_report_2022.11-2026.png" width="1000"><br>
+    <em>Full-size baseline report for 2022.11-2026.</em>
+  </p>
+</details>
+
+<details>
+  <summary><b>Baseline data source note</b></summary>
+
+The baseline evaluation was split into two backtests because the historical data source differed by period.
+
+- <b>2015.01 - 2022.11</b> used a <b>custom EURUSD symbol</b> built for higher-quality historical data.
+- <b>2022.11 - 2026.12</b> used the later-period dataset available in the standard environment.
+
+This split was used to preserve backtest quality rather than to optimize presentation. Together, these two tests provide the full baseline view of the strategy before additional refinements.
+
+</details>
 
 ## Trade-Level Feature Infrastructure
 - CSV per trade
