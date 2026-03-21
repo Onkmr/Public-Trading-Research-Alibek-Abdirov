@@ -153,9 +153,9 @@ Market behavior differs across trading sessions.
 
 To reduce noise and build a more stable trading system, it makes sense to apply additional conditions. One of the key observations was that an Order Block formed during the **London open** or **New York open** may carry greater significance.
 
-These periods are typically associated with higher volatility and stronger market participation. As a result, when confirmation appears during these sessions, the setup may have a higher probability of success.
+These periods are typically associated with higher volatility and stronger market participation. As a result, when confirmation appears during these sessions, the setup have a higher probability of success.
 
-Another important observation was related to trade exits. For better stability and predictability, it is preferable to use a clear and static target rather than a discretionary one.
+Another important observation was related to trade exits. For better stability and predictability, it is preferable to use a clear and static target rather than a dynamic one.
 
 In this strategy, a suitable target is the **high extremum of the support zone** for long trades, and the **low extremum of the resistance zone** for short trades. In other words, once the newest zone is identified and then successfully retested, the corresponding extremum of that zone can be used as the trade target.
 
