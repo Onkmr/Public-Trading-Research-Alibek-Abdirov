@@ -1,9 +1,10 @@
 # Strategy Research and Development Case
 
-This case shows how I took a manual trading strategy and worked to automate it into a system that could trade independently.
+This case shows my approach to turning a manual trading strategy into an automated trading system.
 
 ## Goal
-To turn a manual trading strategy into an algorithmic trading system suitable for live trading.
+
+To develop a production-ready automated trading system for live trading with capital.
 
 ## Terminology
 This case uses several Price Action concepts and abbreviated candlestick timeframe terms:
@@ -24,7 +25,7 @@ From this baseline idea, various conditions and filters were applied to identify
 
 This strategy was developed and tested using EURUSD data.
 
-Below is an example trade:
+The images above show the same setup on two different timeframes: 4H for the FVG and 1H for the Order Block confirmation.
 
 <table>
   <tr>
@@ -85,9 +86,62 @@ In each example, the rightmost candle represents the point at which the strategy
   </tr>
 </table>
 
-- visual review of setups
-- image collection / trade examples
-- manual labeling process
+
+### Hand labeling process
+
+For manual labeling, I selected **2015, 2020, 2021, and 2025**.  
+These years were chosen intentionally to test whether the strategy remained stable across different market regimes.
+All labels were assigned manually **before** reviewing the final trade outcome.
+
+### Match rate / validation outcome**
+
+In **2025**, the strategy generated **143 setups**. 
+
+Among **53 Valid Entry** labels, **29** resulted in clear continuation, **9** were unclear, and **15** turned out to be fake. This gives a **Valid Entry precision of 54.7%** (**29 / 53**).
+
+There were **32 Unclear** labels. These cases were less useful in practice because they did not support a confident execution decision. Their outcomes were mixed: **12** continuation, **5** unclear, and **15** fake.
+
+Among **58 Fake / No Entry** labels, **42** were correctly identified as fake, giving a **72.4% precision** (**42 / 58**). This suggested that the strategy was more effective at filtering weak setups than at selecting high-quality entries.
+
+<details>
+  <summary><b>2021 Validation Summary</b></summary>
+
+In <b>2021</b>, the strategy generated <b>123 setups</b>.
+
+Among <b>58 Valid Entry</b> labels, <b>29</b> resulted in clear continuation, <b>5</b> were unclear, and <b>24</b> turned out to be fake. This gives a <b>Valid Entry precision of 50.0%</b> (<b>29 / 58</b>).
+
+There were <b>24 Unclear</b> labels: <b>5</b> resulted in continuation, <b>2</b> remained unclear, and <b>17</b> turned out to be fake.
+
+Among <b>41 Fake / No Entry</b> labels, <b>34</b> were correctly identified as fake, giving an <b>82.9% precision</b> (<b>34 / 41</b>).
+
+</details>
+
+<details>
+  <summary><b>2020 Validation Summary</b></summary>
+
+In <b>2020</b>, the strategy generated <b>104 setups</b>.
+
+Among <b>48 Valid Entry</b> labels, <b>32</b> resulted in clear continuation, <b>4</b> were unclear, and <b>12</b> turned out to be fake. This gives a <b>Valid Entry precision of 66.7%</b> (<b>32 / 48</b>).
+
+There were <b>31 Unclear</b> labels: <b>15</b> resulted in continuation, <b>7</b> remained unclear, and <b>9</b> turned out to be fake.
+
+Among <b>25 Fake / No Entry</b> labels, <b>19</b> were correctly identified as fake, giving a <b>76.0% precision</b> (<b>19 / 25</b>).
+
+</details>
+
+<details>
+  <summary><b>2015 Validation Summary</b></summary>
+
+In <b>2015</b>, the strategy generated <b>106 setups</b>.
+
+Among <b>41 Valid Entry</b> labels, <b>22</b> resulted in clear continuation, <b>7</b> were unclear, and <b>12</b> turned out to be fake. This gives a <b>Valid Entry precision of 53.7%</b> (<b>22 / 41</b>).
+
+There were <b>29 Unclear</b> labels: <b>14</b> resulted in continuation, <b>2</b> remained unclear, and <b>13</b> turned out to be fake.
+
+Among <b>36 Fake / No Entry</b> labels, <b>30</b> were correctly identified as fake, giving a <b>83.3% precision</b> (<b>30 / 36</b>).
+
+</details>
+
 - labeled sample size
 - year coverage
 - match rate / validation outcome
@@ -120,6 +174,7 @@ In this strategy, a suitable target is the **high extremum of the support zone**
 ## Filter 2: RR to Extremum
 
 ## Result: Higher Win Rate, but Weak Expectancy
+## Conclusion:
 
 ## Next Research Direction: Improving Expectancy
 - limit entries
