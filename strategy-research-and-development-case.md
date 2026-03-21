@@ -21,7 +21,7 @@ The initial strategy was based on the following setup:
 
 The strategy identifies the newest support or resistance zone, then looks for the first retest of that zone together with the appearance of confirmation.
 
-From this baseline idea, various conditions and filters were applied to identify the conditions under which the strategy could be more predictable and suitable for live trading.
+From this baseline idea, various conditions and filters will be applied to identify the conditions under which the strategy could be more predictable and suitable for live trading.
 
 This strategy was developed and tested using EURUSD data.
 
@@ -160,6 +160,8 @@ Another important observation was related to trade exits. For better stability a
 In this strategy, a suitable target is the **high extremum of the support zone** for long trades, and the **low extremum of the resistance zone** for short trades. In other words, once the newest zone is identified and then successfully retested, the corresponding extremum of that zone can be used as the trade target.
 
 ## Baseline Performance
+
+
 
 ## Trade-Level Feature Infrastructure
 - CSV per trade
