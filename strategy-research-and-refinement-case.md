@@ -57,7 +57,7 @@ This process helped me understand where the strategy actually worked, where it f
 <table>
   <tr>
     <td align="center">
-      <img src="images/strategy-research-and-refinement-case/example-1.bmp" width="420"><br>
+      <img src="images/strategy-research-and-refinement-case/example-1.png" width="420"><br>
       <em>Figure 1. Clean retest with confirmation.</em><br>
       <strong>Label: Valid Entry</strong>
     </td>
@@ -70,7 +70,7 @@ This process helped me understand where the strategy actually worked, where it f
   <tr>
     <td align="center">
       <img src="images/strategy-research-and-refinement-case/example-3.png" width="420"><br>
-      <em>Figure 3. Confirmation structure is ambiguous.</em><br>
+      <em>Figure 3. Confirmation structure is unclear</em><br>
       <strong>Label: Unclear</strong>
     </td>
     <td align="center">
@@ -80,12 +80,6 @@ This process helped me understand where the strategy actually worked, where it f
     </td>
   </tr>
 </table>
-
-<p align="center">
-  <img src="images/strategy-research-and-refinement-case/example-5.png" width="500"><br>
-  <em>Figure 5. Got the preferable target(дошли до экстремума, Главной потенциальной цели).</em><br>
-  <strong>Label: No Entry</strong>
-</p>
 
 - visual review of setups
 - image collection / trade examples
