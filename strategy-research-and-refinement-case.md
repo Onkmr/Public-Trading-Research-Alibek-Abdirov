@@ -25,7 +25,7 @@ From this baseline idea, various conditions and filters are applied to identify 
 ## Manual Validation and Hand Labels
 Commonly I use period of 10 years for my trading strategies. In this strategy I will use 10 years period as well.
 I connect this trading strategy to my infrastructure, it doing screenshot of chart for every situation of our Trading Strategy.
-![Alt text](images/strategy-research-and-refinement-case/EURUSD.tickstory_H1_2021.09.15_06_00_N200_S_L0.bmp)
+![Alt text](images/strategy-research-and-refinement-case/example-1.bmp)
 
 - visual review of setups
 - image collection / trade examples
