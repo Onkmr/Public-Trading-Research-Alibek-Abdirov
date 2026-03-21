@@ -87,7 +87,7 @@ In each example, the rightmost candle represents the point at which the strategy
 </table>
 
 
-### Hand labeling process
+### Manual labeling process
 
 For manual labeling, I selected **2015, 2020, 2021, and 2025**.  
 These years were chosen intentionally to test whether the strategy remained stable across different market regimes.
@@ -99,7 +99,7 @@ In **2025**, the strategy generated **143 setups**.
 
 Among **53 Valid Entry** labels, **29** resulted in clear continuation, **9** were unclear, and **15** turned out to be fake. This gives a **Valid Entry precision of 54.7%** (**29 / 53**).
 
-There were **32 Unclear** labels. These cases were less useful in practice because they did not support a confident execution decision. Their outcomes were mixed: **12** continuation, **5** unclear, and **15** fake.
+There were **32 Unclear** labels. This category was used to avoid forcing borderline setups into either **Valid Entry** or **No Entry**. Their outcomes were mixed: **12** continuation, **5** unclear, and **15** fake.
 
 Among **58 Fake / No Entry** labels, **42** were correctly identified as fake, giving a **72.4% precision** (**42 / 58**). This suggested that the strategy was more effective at filtering weak setups than at selecting high-quality entries.
 
@@ -142,14 +142,11 @@ Among <b>36 Fake / No Entry</b> labels, <b>30</b> were correctly identified as f
 
 </details>
 
-- labeled sample size
-- year coverage
-- match rate / validation outcome
-
 ## Why the Idea Was Worth Developing
-- manual review showed that the setup had recognizable structure
-- results were not random from a discretionary point of view
-- this justified moving from visual pattern recognition to formal rule design
+
+Manual review showed that the setup had a recognizable and repeatable structure. From a discretionary perspective, the results did not appear fully random, which suggested that the strategy contained enough signal to justify further development.
+
+This was the point where the work moved from visual pattern recognition to formal rule design, feature extraction, and systematic validation.
 
 ## Observation
 Market behavior differs across trading sessions.
