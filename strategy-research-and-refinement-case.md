@@ -25,7 +25,38 @@ From this baseline idea, various conditions and filters are applied to identify 
 ## Manual Validation and Hand Labels
 Commonly I use period of 10 years for my trading strategies. In this strategy I will use 10 years period as well.
 I connect this trading strategy to my infrastructure, it doing screenshot of chart for every situation of our Trading Strategy.
-![Alt text](images/strategy-research-and-refinement-case/example-1.bmp)
+<table>
+  <tr>
+    <td align="center">
+      <img src="images/strategy-research-and-refinement-case/example-1.bmp" width="420"><br>
+      <em>Figure 1. Clean retest with confirmation.</em><br>
+      <strong>Label: Valid Entry</strong>
+    </td>
+    <td align="center">
+      <img src="images/strategy-research-and-refinement-case/example-2.png" width="420"><br>
+      <em>Figure 2. Extremum no longer valid.</em><br>
+      <strong>Label: No Entry</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="images/strategy-research-and-refinement-case/example-3.png" width="420"><br>
+      <em>Figure 3. Confirmation structure is ambiguous.</em><br>
+      <strong>Label: Unclear</strong>
+    </td>
+    <td align="center">
+      <img src="images/strategy-research-and-refinement-case/example-4.png" width="420"><br>
+      <em>Figure 4. Valid retest during session open.</em><br>
+      <strong>Label: Valid Entry</strong>
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="images/strategy-research-and-refinement-case/example-5.png" width="500"><br>
+  <em>Figure 5. Structure invalidated before target.</em><br>
+  <strong>Label: No Entry</strong>
+</p>
 
 - visual review of setups
 - image collection / trade examples
