@@ -56,6 +56,8 @@ This process helped me understand where the strategy actually worked, where it f
 
 
 Examples below show 1H chart structures used during manual validation. To improve dataset coverage, my research infrastructure can transform short setups into equivalent long-format examples. Since the setup is direction-neutral in EURUSD, this transformation was suitable and allowed me to increase the effective sample size.
+
+In each example, the rightmost candle represents the point at which the strategy detected the setup
 <table>
   <tr>
     <td align="center">
