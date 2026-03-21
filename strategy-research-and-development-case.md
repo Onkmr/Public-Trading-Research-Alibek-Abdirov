@@ -59,7 +59,7 @@ This process helped me understand where the strategy actually worked, where it f
 
 Examples below show 1H chart structures used during manual validation. To improve dataset coverage, my research infrastructure can transform short setups into equivalent long-format examples. Since the setup is direction-neutral in EURUSD, this transformation was suitable and allowed me to increase the effective sample size.
 
-In each example, the rightmost candle represents the point at which the strategy detected the setup
+In each example, the rightmost candle represents the point at which the strategy detected the setup.
 <table>
   <tr>
     <td align="center">
@@ -168,7 +168,7 @@ Summary report for **2015-2026**:
 
 | Metric | Combined Result |
 |---|---:|
-| Backtest Coverage | 2015.01 - 2026 (split baseline) |
+| Backtest Coverage | 2015.01 - 2026.12 (split baseline) |
 | Total Net Profit | -$5,867.56 |
 | Gross Profit | $152,802.36 |
 | Gross Loss | -$158,669.92 |
@@ -181,36 +181,24 @@ Summary report for **2015-2026**:
 | Average Profit Trade | $1,123.55 |
 | Average Loss Trade | -$1,023.68 |
 
-<p align="center">
-  <img src="images/strategy-research-and-development-case/baseline_report_2015-2022.11.png" width="420"><br>
-  <em>Figure 1. Baseline report preview for 2015.01-2022.11.</em>
-</p>
+Click the report images below to open them in full size.
 
-<p align="center">
-  <img src="images/strategy-research-and-development-case/baseline_report_2022.11-2026.png" width="420"><br>
-  <em>Figure 2. Baseline report preview for 2022.11-2026.</em>
-</p>
+<a href="images/strategy-research-and-development-case/baseline_report_2015-2022.11.png">
+  <img src="images/strategy-research-and-development-case/baseline_report_2015-2022.11.png" width="950"><br>
+</a>
+<em>Figure 1. Baseline report for 2015.01-2022.11.</em>
 
-<details>
-  <summary><b>View full-size baseline report: 2015.01-2022.11</b></summary>
-  <br>
-  <p align="center">
-    <img src="images/strategy-research-and-development-case/baseline_report_2015-2022.11.png" width="1000"><br>
-    <em>Full-size baseline report for 2015.01-2022.11.</em>
-  </p>
-</details>
+<br><br>
 
-<details>
-  <summary><b>View full-size baseline report: 2022.11-2026</b></summary>
-  <br>
-  <p align="center">
-    <img src="images/strategy-research-and-development-case/baseline_report_2022.11-2026.png" width="1000"><br>
-    <em>Full-size baseline report for 2022.11-2026.</em>
-  </p>
-</details>
+<a href="images/strategy-research-and-development-case/baseline_report_2022.11-2026.png">
+  <img src="images/strategy-research-and-development-case/baseline_report_2022.11-2026.png" width="950"><br>
+</a>
+<em>Figure 2. Baseline report for 2022.11-2026.</em>
 
 <details>
   <summary><b>Baseline data source note</b></summary>
+
+The baseline and all subsequent backtests were performed in <b>MetaTrader 5</b>, while the trading system itself was written in <b>MQL5</b> (a C++-style trading language).
 
 The baseline evaluation was split into two backtests because the historical data source differed by period.
 
