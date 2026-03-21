@@ -8,23 +8,52 @@ To test and refine a simple price action strategy, and identify the market condi
 ## Terminology
 This case uses several Price Action concepts and abbreviated candlestick timeframe terms:
 
-- **FVG (Fair Value Gap)** — a support/resistance zone in Price Action
-- **Order Block (OB)** — a candlestick pattern in Price Action used as confirmation of a support/resistance zone
-- **4H** — 4-hour candlestick timeframe
-- **1H** — 1-hour candlestick timeframe
+- **FVG (Fair Value Gap)** - a support/resistance zone in Price Action
+- **Order Block (OB)** - a candlestick pattern in Price Action used as confirmation of a support/resistance zone
+- **4H** - 4-hour candlestick timeframe
+- **1H** - 1-hour candlestick timeframe
 
 ## Initial Idea
 The initial strategy idea was based on the following setup:
 
 **Newest 4H FVG + 1H Order Block**
 
-The strategy detects the newest support or resistance zone, then looks for the first retest of that zone together with the appearance of confirmation.
+The strategy identifies the newest support or resistance zone, then looks for the first retest of that zone together with the appearance of confirmation.
 
 From this baseline idea, various conditions and filters are applied to identify the most effective operating conditions for the trading system.
 
+This strategy was developed and tested using EURUSD data.
+
+Below is an example trade:
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="images/strategy-research-and-refinement-case/sample-4h-FVG.png" alt="4H FVG example" width="420" /><br/>
+      <sub><b>4H FVG</b></sub>
+    </td>
+    <td align="center">
+      <img src="images/strategy-research-and-refinement-case/sample-1h-OB.png" alt="1H Order Block example" width="420" /><br/>
+      <sub><b>1H Order Block</b></sub>
+    </td>
+  </tr>
+</table>
+
+
+
 ## Manual Validation and Hand Labels
-Commonly I use period of 10 years for my trading strategies. In this strategy I will use 10 years period as well.
-I connect this trading strategy to my infrastructure, it doing screenshot of chart for every situation of our Trading Strategy.
+I integrated the strategy into my research infrastructure, which automatically captured chart screenshots for every detected setup. These screenshots were then reviewed manually to validate setup quality and assign a label.
+
+Hand labeling was the most important step in this research process.
+
+It acted as an early decision filter: if I could not consistently distinguish higher-quality setups from weaker ones before entry from a trader’s perspective, then the idea was not worth developing further.
+
+This was a critical checkpoint, because it could save months of work that would otherwise be spent refining an idea with no real predictive structure.
+
+Each setup was manually labeled as **Valid Entry**, **No Entry**, or **Unclear**.
+
+This process helped me understand where the strategy actually worked, where it failed, and whether the setup showed enough consistency to justify deeper quantitative research.
+
 <table>
   <tr>
     <td align="center">
@@ -54,7 +83,7 @@ I connect this trading strategy to my infrastructure, it doing screenshot of cha
 
 <p align="center">
   <img src="images/strategy-research-and-refinement-case/example-5.png" width="500"><br>
-  <em>Figure 5. Structure invalidated before target.</em><br>
+  <em>Figure 5. Got the preferable target(дошли до экстремума, Главной потенциальной цели).</em><br>
   <strong>Label: No Entry</strong>
 </p>
 
