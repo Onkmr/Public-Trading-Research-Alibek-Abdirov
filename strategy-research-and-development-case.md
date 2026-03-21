@@ -94,7 +94,7 @@ For manual labeling, I selected **2015, 2020, 2021, and 2025**.
 These years were chosen intentionally to test whether the strategy remained stable across different market regimes.
 All labels were assigned manually **before** reviewing the final trade outcome.
 
-### Match rate / validation outcome**
+### Match rate / validation outcome
 
 In **2025**, the strategy generated **143 setups**. 
 
