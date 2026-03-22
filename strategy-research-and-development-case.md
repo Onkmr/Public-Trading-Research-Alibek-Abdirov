@@ -326,16 +326,19 @@ Files:
 
 </details>
 
+At this point, I already had a high-win-rate system, but the expectancy was still too weak.
 
-
-## Result: Higher Win Rate, but Weak Expectancy
-## Conclusion:
+So the next research direction was to improve the economics of each trade rather than push win rate even higher.
 
 ## Next Research Direction: Improving Expectancy
 - limit entries
 - alternative execution logic
 
-## Additional Research Branches
+## Result: Higher Win Rate, but Weak Expectancy
+
+## Conclusion:
+
+## Additional Research Branches(subsets)
 - second Order Block entry
 - first-touch Order Block entry
 
