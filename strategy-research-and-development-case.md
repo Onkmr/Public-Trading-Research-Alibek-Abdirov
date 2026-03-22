@@ -279,6 +279,7 @@ If you want to check it yourself, you can use the CSV file together with this Ju
 [Filter 1 notebook](images/strategy-research-and-development-case/Filter_Trouble_Area.ipynb)
 
 </details>
+
 ## Filter 2: RR to Extremum
 
 ## Result: Higher Win Rate, but Weak Expectancy
