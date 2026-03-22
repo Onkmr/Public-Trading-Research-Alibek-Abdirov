@@ -280,6 +280,8 @@ If you want to check it yourself, you can use the CSV file together with this Ju
 
 </details>
 
+From this point on, I will continue working only with the subset of trades where there is no open opposite FVG between entry and target.
+
 ## Filter 2: RR to Extremum
 
 ## Result: Higher Win Rate, but Weak Expectancy
