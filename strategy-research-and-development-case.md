@@ -205,7 +205,7 @@ The baseline evaluation was split into two backtests because the historical data
 - <b>2015.01 - 2022.11</b> used a <b>custom EURUSD symbol</b> built for higher-quality historical data.
 - <b>2022.11 - 2026.12</b> used the later-period dataset available in the standard environment.
 
-This split was used to preserve backtest quality rather than to optimize presentation. Together, these two tests provide the full baseline view of the strategy before additional refinements.
+Together, these two tests provide the full baseline view of the strategy before additional refinements.
 
 </details>
 
