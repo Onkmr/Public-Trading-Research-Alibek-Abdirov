@@ -404,7 +404,7 @@ CSV file:
 
 Although I achieved what I wanted by using **limit execution**, increasing the amount of profit extracted from each trade - the system in its current form still does not fit my requirements.
 
-The main reason is the number of trades: only **37 trades over 20 years**, which is too small for the type of production-ready system I want to build.
+The main reason is the number of trades: only **37 trades over 20 years**, which is too small for a production-ready system to survive in real market conditions.
 
 At the same time, for me, a clear win was reaching an intermediate result with around 80% win rate while fully understanding the entire process behind it.
 
