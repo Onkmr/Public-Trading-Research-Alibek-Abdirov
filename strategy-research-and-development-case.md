@@ -414,11 +414,17 @@ This case demonstrates my step-by-step approach to strategy research and develop
 
 By the time the case was completed in February 2026, I had developed a much deeper understanding of how to select strategies worth developing and became more confident in my research process.
 
-Although the strategy showed a degree of predictability when evaluated manually - which was confirmed during the manual validation stage - it was not an ideal candidate for full automation.
+Although the strategy showed a degree of predictability when evaluated manually — which was confirmed during the manual validation stage — it was not an ideal candidate for full automation.
+
+The main objective behind pushing this subset further was to explore its limits and extract the maximum possible signal quality.
+
+More broadly, this reflects my approach of decomposing the overall signal space into smaller subsets in order to identify segments that demonstrate enough consistency for full automation and live trading.
 
 ## Additional Research Branches (Subsets)
-- second Order Block entry
-- first-touch Order Block entry
+
+In addition to the original strategy idea based on the **newest 4H FVG + 1H Order Block** setup, I also tested the **newest 4H FVG + second 1H Order Block** variation.
+
+The idea behind this variation was that if a second Order Block forms from the same support/resistance zone, that area may require less additional filtering and could potentially be suitable for live trading in a more direct form.
 
 ## Final Thoughts
 
