@@ -281,8 +281,19 @@ If you want to check it yourself, you can use the CSV file together with this Ju
 </details>
 
 From this point on, I will continue working only with the subset of trades where there is no open opposite FVG between entry and target.
+Here are dataset: [CSV_No_Open_FVG](images/strategy-research-and-development-case/FVG_OB_2015-2025_No_Open_Fvg.csv)
 
 ## Filter 2: RR to Extremum
+
+At this stage, I was experimenting with **tabular ML** methods such as **Random Forest** and **Logistic Regression** to better understand which features were most related to trade outcome.
+
+One of the features that caught my attention was `rr_ext` — the risk-reward distance to the extremum.
+
+After noticing that this variable seemed to matter, I tested a much simpler question directly on the dataset: what happens if the system only takes trades where **RR to extremum is below 0.5**?
+
+This became the basis for the next filter.
+
+
 
 ## Result: Higher Win Rate, but Weak Expectancy
 ## Conclusion:
