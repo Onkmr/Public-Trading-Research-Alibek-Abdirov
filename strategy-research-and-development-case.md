@@ -353,6 +353,51 @@ Example: if the risk per trade is **$1,000**, then:
 - if the trade loses, the result is **-$1,000**
 - if the trade wins, the result is **+$1,500**
 
+For this trading system, I used a fixed risk of $1,000 per trade.
+
+</details>
+
+Summary report for **2005-2026**:
+
+| Metric | Combined Result |
+|---|---:|
+| Backtest Coverage | 2005 - 2026 |
+| Total Net Profit | $10,243.40 |
+| Gross Profit | $28,410.00 |
+| Gross Loss | -$18,166.60 |
+| Profit Factor | 1.56 |
+| Expected Payoff | $276.85 |
+| Total Trades | 37 |
+| Profit Trades | 19 |
+| Loss Trades | 18 |
+| Win Rate | 51.35% |
+| Average Profit Trade | $1,495.26 |
+| Average Loss Trade | -$1,009.26 |
+
+Because the `RR to extremum < 0.5` filter increased win rate at the cost of weaker expectancy, using **limit execution** in this subset turned out to be justified, as it improved the mathematical expectancy per trade.
+
+The main issue with the system in its current form is that switching from **market execution** to **limit execution** does not remove the losing trades that already existed in the original subset. In this case, all **18 losing trades** remain.
+
+<details>
+  <summary><b>Backtest reports and CSV file</b></summary>
+
+<a href="images/strategy-research-and-development-case/limit_report_2005-2022.11.png">
+  <img src="images/strategy-research-and-development-case/limit_report_2005-2022.11.png" width="950"><br>
+</a>
+<em>Figure 1. Limit Execution report for 2005.01-2022.11.</em>
+
+<br><br>
+
+<a href="images/strategy-research-and-development-case/limit_report_2022.11-2026.png">
+  <img src="images/strategy-research-and-development-case/limit_report_2022.11-2026.png" width="950"><br>
+</a>
+<em>Figure 2. Limit Execution report for 2022.11-2026.</em>
+
+<br><br>
+
+CSV file:  
+[Open CSV](images/strategy-research-and-development-case/FVG_OB_2005-2026_Limit.csv)
+
 </details>
 
 ## Result: Higher Win Rate, but Weak Expectancy
