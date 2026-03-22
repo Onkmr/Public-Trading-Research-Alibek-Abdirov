@@ -214,7 +214,7 @@ Together, these two tests provide the full baseline view of the strategy before 
 As mentioned earlier, I connected the trading system to my infrastructure, which also logs trade information into a CSV file.  
 Each row in this dataset represents one trade together with its features.
 
-For this trading system, I used features related to **session**, **volatility**, and **market conditions** and code some additional features related to mechanic of Strategy.
+For this trading system, I used features related to session, volatility, and market conditions, and also coded additional features related to the mechanics of the strategy.
 
 <details>
   <summary><b>About the features</b></summary>
@@ -225,6 +225,7 @@ If there is a concrete and formalizable idea — something that can be clearly d
 
 This trade-level CSV dataset also makes it possible to apply **tabular machine learning** as a simpler way to search for patterns and relationships in the strategy behaviour, as long as the features meaningfully describe the current market state and vary enough across trades to contain signal.
 
+</details>
 <details>
   <summary><b>Trade-features dataset preview (first 10 rows)</b></summary>
 
