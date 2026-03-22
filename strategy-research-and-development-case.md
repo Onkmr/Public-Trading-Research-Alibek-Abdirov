@@ -27,7 +27,7 @@ From this baseline idea, various conditions and filters will be applied to ident
 
 This strategy was developed and tested using EURUSD data.
 
-The images below show the same setup on two different timeframes: 4H for the FVG and 1H for the Order Block confirmation.
+The images above show the same setup on two different timeframes: 4H for the FVG and 1H for the Order Block confirmation.
 
 <table>
   <tr>
@@ -222,11 +222,11 @@ In this strategy, all features are collected before the trade is opened, at the 
 <details>
   <summary><b>About the features</b></summary>
 
-The features are simply my specific ideas encoded in code.
+The features are simply my specific ideas implemented in code.
 
-If there is a concrete and formalizable idea - something that can be clearly described in words - it can also be encoded and added as a feature.
+If there is a concrete and formalizable idea - something that can be clearly described in words - it can also be added as a feature.
 
-This trade-features CSV dataset also makes it possible to apply **tabular machine learning** as a simpler way to search for patterns and relationships in the strategy behaviour, as long as the features meaningfully describe the current market state and vary enough across trades to contain signal.
+This trade-features CSV dataset also makes it possible to apply tabular machine learning to search for patterns and relationships in strategy behaviour, as long as the features meaningfully describe the current market state and vary enough across trades to contain signal.
 
 </details>
 <details>
