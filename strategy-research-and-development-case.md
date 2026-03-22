@@ -14,6 +14,7 @@ This case uses several Price Action concepts and abbreviated candlestick timefra
 - **Risk-Reward Ratio (RR)** - the ratio of expected reward to predefined risk for an trade
 - **4H** - 4-hour candlestick timeframe
 - **1H** - 1-hour candlestick timeframe
+- **Setup** - a combination of FVG + OB
 
 ## Initial Strategy
 The initial strategy was based on the following setup:
