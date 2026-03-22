@@ -319,9 +319,10 @@ Let's keep developing this idea further.
 This comparison was produced by splitting trades by the condition `rr_ext < 0.5` and comparing the main trading metrics for both groups.
 
 Files:
-- [CSV file 1](LINK_TO_FILE_1.csv)
-- [CSV file 2](LINK_TO_FILE_2.csv)
-- [Jupyter notebook — RR < 0.5](LINK_TO_NOTEBOOK.ipynb)
+- [CSV 2015-2026_RR<0.5](LINK_TO_FILE_1.csv)
+- [CSV 2005-2026_ALL](LINK_TO_FILE_2.csv)
+- [CSV 2005-2026_RR<0.5](LINK_TO_FILE_2.csv)
+- [Jupyter notebook-RR < 0.5](LINK_TO_NOTEBOOK.ipynb)
 
 </details>
 
