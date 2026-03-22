@@ -333,8 +333,27 @@ At this point, I already had a high-win-rate system, but the expectancy was stil
 So the next research direction was to improve the economics of each trade rather than push win rate even higher.
 
 ## Next Research Direction: Improving Expectancy
-- limit entries
-- alternative execution logic
+
+At this point, the final subset — **no open opposite FVG to the extremum** and **RR to extremum < 0.5** — already produced a high win rate of around **80%**, but the expectancy was still not strong enough.
+
+This suggested that the next problem was no longer setup quality, but execution quality.
+
+Since the target was already clearly defined in advance (the **extremum**), it made sense to test whether **limit execution**, instead of immediate market execution after the setup was identified, could improve entry price and make the system more reliable for live trading.
+
+In this version, after the system detects a setup that passes all filters, a **limit order** is placed at a **risk-reward ratio of 1:1.5**.
+
+<details>
+  <summary><b>About risk-reward ratio (RR)</b></summary>
+
+**Risk-reward ratio 1:1.5** means risking **1 unit** in order to potentially make **1.5 units**.
+
+In other words, the trade is structured so that the potential reward is 1.5 times larger than the predefined risk.
+
+Example: if the risk per trade is **$1,000**, then:
+- if the trade loses, the result is **-$1,000**
+- if the trade wins, the result is **+$1,500**
+
+</details>
 
 ## Result: Higher Win Rate, but Weak Expectancy
 
