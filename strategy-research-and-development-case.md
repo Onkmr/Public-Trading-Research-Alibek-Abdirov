@@ -420,4 +420,20 @@ Although the strategy showed a degree of predictability when evaluated manually 
 - second Order Block entry
 - first-touch Order Block entry
 
-## Key Takeaways
+## Final Thoughts
+
+At the beginning of my journey in building trading systems, I did not have a structured research approach. 
+
+I relied mostly on intuition and repeated attempts to make strategies work, without a clear understanding of how to properly validate them and turn them into robust systems. 
+
+This often led to inconsistent results and made it difficult to determine whether a strategy had real potential or was simply noise.
+
+Over time, I started to understand what was needed for a more structured research process.
+
+This led me to develop an approach based on data collection, feature extraction, and manual validation through hand labeling.
+
+Building a simple research infrastructure became an important step, as it allowed me to systematically collect data, review trades, and iterate on ideas in a more controlled and efficient way.
+
+As a result, my approach evolved from trial and error into a more structured and repeatable process for strategy research and development.
+
+This is a process I continue to refine and apply to new strategies.
