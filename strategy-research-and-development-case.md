@@ -424,7 +424,7 @@ More broadly, this reflects my approach of decomposing the overall signal space 
 
 In addition to the original strategy idea based on the **newest 4H FVG + 1H Reaction Confirmation** setup, I also tested the **newest 4H FVG + second 1H Reaction Confirmation** variation.
 
-The idea behind this variation was that if the first reaction continuation failed, but a second reaction confirmation formed from the same support/resistance zone, then that area might require less additional filtering and could potentially be suitable for live trading in a more direct form.
+The idea behind this variation was that if the first confirmation did not lead to continuation, but a second confirmation later formed from the same support/resistance zone, then that area might require less additional filtering and could potentially be suitable for live trading in a more direct form.
 
 ## Final Thoughts
 
