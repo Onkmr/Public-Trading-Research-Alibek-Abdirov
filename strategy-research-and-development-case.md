@@ -27,7 +27,7 @@ From this baseline idea, various conditions and filters will be applied to ident
 
 This strategy was developed and tested using EURUSD data.
 
-The images above show the same setup on two different timeframes: 4H for the FVG and 1H for the Order Block confirmation.
+The images below show the same setup on two different timeframes: 4H for the FVG and 1H for the Order Block confirmation.
 
 <table>
   <tr>
