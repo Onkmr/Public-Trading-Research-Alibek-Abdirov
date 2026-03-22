@@ -210,9 +210,41 @@ This split was used to preserve backtest quality rather than to optimize present
 </details>
 
 ## Trade-Level Feature Infrastructure
-- CSV per trade
-- structured features
-- analysis-ready dataset
+
+As mentioned earlier, I connected the trading system to my infrastructure, which also logs trade information into a CSV file.  
+Each row in this dataset represents one trade together with its features.
+
+For this research, I used features related to **session**, **volatility**, and **market conditions**.
+
+<details>
+  <summary><b>About the features</b></summary>
+
+The features are simply my specific ideas described in code.
+
+If there is a concrete and formalizable idea — something that can be clearly described in words before entry — it can also be encoded and added as a feature.
+
+This trade-level CSV dataset also makes it possible to apply **tabular machine learning** as a simpler way to search for patterns and relationships in the strategy behaviour, as long as the features meaningfully describe the current market state and vary enough across trades to contain signal.
+
+<details>
+  <summary><b>Trade-features dataset preview (first 10 rows)</b></summary>
+
+| ts | trade_id | symbol | RangeA_ATR | SumOppBody5_ATR | RangeExpansion | has_open_fvg_in_range | DistanceToExt_ATR | is_profitable | profit |
+|---|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| 2015.01.12 16:00:00 | 2  | EURUSD.TDS | 1.090831 | 4.212656 | 2.321373 | 1 | 2.570760 | 0 | -1048.17 |
+| 2015.01.28 12:00:00 | 4  | EURUSD.TDS | 1.641236 | 3.074060 | 1.194796 | 0 | 2.973011 | 0 | -999.12 |
+| 2015.02.06 12:00:00 | 6  | EURUSD.TDS | 1.289266 | 2.483616 | 1.314146 | 0 | 3.607912 | 0 | -999.60 |
+| 2015.03.03 11:00:00 | 8  | EURUSD.TDS | 1.642288 | 3.598841 | 1.910975 | 0 | 1.055707 | 1 | 449.55 |
+| 2015.03.12 16:00:00 | 10 | EURUSD.TDS | 1.812203 | 2.980422 | 1.320446 | 1 | 2.993758 | 1 | 1717.17 |
+| 2015.04.17 11:00:00 | 12 | EURUSD.TDS | 2.143426 | 1.828685 | 1.908151 | 0 | 1.265353 | 1 | 645.84 |
+| 2015.05.25 11:00:00 | 14 | EURUSD.TDS | 1.094714 | 1.464758 | 1.430657 | 0 | 0.447557 | 1 | 266.11 |
+| 2015.05.29 11:00:00 | 16 | EURUSD.TDS | 2.178256 | 2.377257 | 1.417536 | 0 | 0.580364 | 1 | 307.80 |
+| 2015.06.08 12:00:00 | 18 | EURUSD.TDS | 2.110211 | 2.949757 | 1.466516 | 0 | 1.510581 | 0 | -999.94 |
+| 2015.06.09 17:00:00 | 20 | EURUSD.TDS | 1.299953 | 2.142454 | 1.514296 | 0 | 2.839309 | 1 | 2458.94 |
+
+The full CSV file is also available here:  
+[Open sample CSV](images/strategy-research-and-development-case/FVG_OB_2015-2025.csv)
+
+</details>
 
 ## Filter 1: Trouble Area Before Target
 
