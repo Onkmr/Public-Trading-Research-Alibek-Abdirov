@@ -169,7 +169,7 @@ Summary report for **2015-2026**:
 
 | Metric | Combined Result |
 |---|---:|
-| Backtest Coverage | 2015.01 - 2026.12 (split baseline) |
+| Backtest Coverage | 2015 - 2026 (split baseline) |
 | Total Net Profit | -$5,867.56 |
 | Gross Profit | $152,802.36 |
 | Gross Loss | -$158,669.92 |
@@ -204,7 +204,7 @@ The baseline and all subsequent backtests were performed in <b>MetaTrader 5</b>,
 The baseline evaluation was split into two backtests because the historical data source differed by period.
 
 - <b>2015.01 - 2022.11</b> used a <b>custom EURUSD symbol</b> built for higher-quality historical data.
-- <b>2022.11 - 2026.12</b> used the later-period dataset available in the standard environment.
+- <b>2022.11 - 2026</b> used the later-period dataset available in the standard environment.
 
 Together, these two tests provide the full baseline view of the strategy before additional refinements.
 
