@@ -293,6 +293,7 @@ One of the features that caught my attention was `rr_ext` - the risk-reward dist
 After noticing that this variable seemed to matter, I tested a much simpler question directly on the dataset: what happens if the system only takes trades where **RR to extremum is below 0.5**?
 
 This became the basis for the next filter.
+Period **2015-2026**:
 
 | rr_ext < 0.5 | Trades | Share % | Wins | Losses | Win rate % | Sum profit | Avg profit | Median profit | Avg win | Avg loss | Profit factor | Avg rr_ext |
 | ------------ | -----: | ------: | ---: | -----: | ---------: | ---------: | ---------: | ------------: | -------: | --------: | ------------: | ---------: |
