@@ -216,14 +216,16 @@ Each row in this dataset represents one trade together with its features.
 
 For this trading system, I used features related to session, volatility, market conditions, and also coded additional features related to the mechanics of the strategy.
 
+In this strategy, all features are collected before the trade is opened, at the moment when the system detects the setup.
+
 <details>
   <summary><b>About the features</b></summary>
 
-The features are simply my specific ideas described in code.
+The features are simply my specific ideas encoded in code.
 
-If there is a concrete and formalizable idea — something that can be clearly described in words before entry — it can also be encoded and added as a feature.
+If there is a concrete and formalizable idea - something that can be clearly described in words - it can also be encoded and added as a feature.
 
-This trade-level CSV dataset also makes it possible to apply **tabular machine learning** as a simpler way to search for patterns and relationships in the strategy behaviour, as long as the features meaningfully describe the current market state and vary enough across trades to contain signal.
+This trade-features CSV dataset also makes it possible to apply **tabular machine learning** as a simpler way to search for patterns and relationships in the strategy behaviour, as long as the features meaningfully describe the current market state and vary enough across trades to contain signal.
 
 </details>
 <details>
