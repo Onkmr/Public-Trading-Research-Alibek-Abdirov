@@ -334,7 +334,7 @@ So the next research direction was to improve the economics of each trade rather
 
 ## Next Research Direction: Improving Expectancy
 
-At this point, the final subset — **no open opposite FVG to the extremum** and **RR to extremum < 0.5** — already produced a high win rate of around **80%**, but the expectancy was still not strong enough.
+At this point, the final subset - **no open opposite FVG to the extremum** and **RR to extremum < 0.5** - already produced a high win rate of around **80%**, but the expectancy was still not strong enough.
 
 This suggested that the next problem was no longer setup quality, but execution quality.
 
@@ -400,9 +400,17 @@ CSV file:
 
 </details>
 
-## Result: Higher Win Rate, but Weak Expectancy
+## Result on the Final Subset
+
+Although I achieved what I wanted by using **limit execution**, increasing the amount of profit extracted from each trade - the system in its current form still does not fit my requirements.
+
+The main reason is the number of trades: only **37 trades over 20 years**, which is too small for the type of production-ready system I want to build.
+
+At the same time, for me, a clear win was reaching an intermediate result with around 80% win rate while fully understanding the entire process behind it.
 
 ## Conclusion:
+
+
 
 ## Additional Research Branches (Subsets)
 - second Order Block entry
