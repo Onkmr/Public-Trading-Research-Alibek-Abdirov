@@ -408,11 +408,11 @@ The main reason is the number of trades: only **37 trades over 20 years**, which
 
 At the same time, for me, a clear win was reaching an intermediate result with around 80% win rate while fully understanding the entire process behind it.
 
-## Conclusion:
+## Conclusion
 
 This case demonstrates my step-by-step approach to strategy research and development.
 
-By the time the project was completed in February 2026, I had developed a much deeper understanding of strategy validation and became more confident in my research process.
+By the time the case was completed in February 2026, I had developed a much deeper understanding of how to select strategies worth developing and became more confident in my research process.
 
 Although the strategy showed a degree of predictability when evaluated manually - which was confirmed during the manual validation stage - it was not an ideal candidate for full automation.
 
