@@ -338,7 +338,7 @@ So the next research direction was to improve the economics of each trade rather
 
 ## Conclusion:
 
-## Additional Research Branches(subsets)
+## Additional Research Branches (Subsets)
 - second Order Block entry
 - first-touch Order Block entry
 
