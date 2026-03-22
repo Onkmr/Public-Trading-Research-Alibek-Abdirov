@@ -275,24 +275,55 @@ This suggested that leaving an unresolved imbalance in front of the trade often 
 
 This comparison was produced from the trade dataset with features by grouping trades by `has_open_fvg_in_range` and comparing win rate, PnL, profit factor.
 
-Jupyter notebook, you can use it with CSV file from block Trade-Level Feature Infrastructure:  
+You can reproduce this check using the CSV file from the **Trade-Level Feature Infrastructure** block together with this Jupyter notebook:  
 [Filter 1 notebook](images/strategy-research-and-development-case/Filter_Trouble_Area.ipynb)
 
 </details>
 
-From this point on, I will continue working only with the subset of trades where there is no open opposite FVG between entry and target.
+From this point forward, I continue the analysis only on the subset of trades where there is no open opposite FVG between entry and target.
 
-Here are dataset: [CSV_No_Open_FVG](images/strategy-research-and-development-case/FVG_OB_2015-2025_No_Open_Fvg.csv)
+Filtered dataset: [CSV_No_Open_FVG](images/strategy-research-and-development-case/FVG_OB_2015-2025_No_Open_Fvg.csv)
 
 ## Filter 2: RR to Extremum
 
 At this stage, I was experimenting with **tabular ML** methods such as **Random Forest** and **Logistic Regression** to better understand which features were most related to trade outcome.
 
-One of the features that caught my attention was `rr_ext` — the risk-reward distance to the extremum.
+One of the features that caught my attention was `rr_ext` - the risk-reward distance to the extremum.
 
 After noticing that this variable seemed to matter, I tested a much simpler question directly on the dataset: what happens if the system only takes trades where **RR to extremum is below 0.5**?
 
 This became the basis for the next filter.
+
+| rr_ext < 0.5 | Trades | Share % | Wins | Losses | Win rate % | Sum profit | Avg profit | Median profit | Avg win | Avg loss | Profit factor | Avg rr_ext |
+| ------------ | -----: | ------: | ---: | -----: | ---------: | ---------: | ---------: | ------------: | -------: | --------: | ------------: | ---------: |
+| 0            |    115 |   70.12 |   55 |     60 |      47.83 |   2,781.50 |      24.19 |       -999.02 | 1,151.35 | -1,009.05 |         1.046 |      1.337 |
+| 1            |     49 |   29.88 |   41 |      8 |      83.67 |   3,199.45 |      65.29 |        221.76 |   274.78 | -1,008.34 |         1.397 |      0.291 |
+
+The system looks more predictable with this filter.
+
+Let's increase the dataset and check whether this idea still holds.
+
+I took the extended period **2005-2026**:
+
+| rr_ext < 0.5 | Trades | Share % | Wins | Losses | Win rate % | Sum profit | Avg profit | Median profit | Avg win | Avg loss | Profit factor | Avg rr_ext |
+| ------------ | -----: | ------: | ---: | -----: | ---------: | ---------: | ---------: | ------------: | -------: | --------: | ------------: | ---------: |
+| 0            |    211 |   69.87 |   98 |    113 |      46.45 |   4,275.19 |      20.26 |       -998.52 | 1,203.85 | -1,006.21 |         1.038 |      1.351 |
+| 1            |     91 |   30.13 |   73 |     18 |      80.22 |   3,030.23 |      33.30 |        256.69 |   289.45 | -1,005.54 |         1.167 |      0.304 |
+
+Good, the strategy looks more stable with this filter.  
+Let's keep developing this idea further.
+
+<details>
+  <summary><b>How this filter was checked</b></summary>
+
+This comparison was produced by splitting trades by the condition `rr_ext < 0.5` and comparing the main trading metrics for both groups.
+
+Files:
+- [CSV file 1](LINK_TO_FILE_1.csv)
+- [CSV file 2](LINK_TO_FILE_2.csv)
+- [Jupyter notebook — RR < 0.5](LINK_TO_NOTEBOOK.ipynb)
+
+</details>
 
 
 
