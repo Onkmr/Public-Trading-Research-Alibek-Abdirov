@@ -245,12 +245,40 @@ This trade-features CSV dataset also makes it possible to apply **tabular machin
 | 2015.06.09 17:00:00 | 20 | EURUSD.TDS | 1.299953 | 2.142454 | 1.514296 | 0 | 2.839309 | 1 | 2458.94 |
 
 The full CSV file is also available here:  
-[Open sample CSV](images/strategy-research-and-development-case/FVG_OB_2015-2025.csv)
+[Open full CSV](images/strategy-research-and-development-case/FVG_OB_2015-2025.csv)
 
 </details>
 
 ## Filter 1: Trouble Area Before Target
 
+During the **manual validation / hand-labeling** stage, I noticed that trades often performed worse when there was an **open opposite FVG in the range between entry and target**.
+
+This became one of the first observations I decided to test quantitatively.  
+The reasoning was straightforward: if such an imbalance remains open in front of the trade, it may act as a **trouble area before TP** and increase the probability of a losing outcome.
+
+| has_open_fvg_in_range | Trades | Share % | Wins | Losses | Win rate % | Sum profit | Avg profit | Median profit | Avg win | Avg loss | Profit factor | Avg rr_ext |
+| --------------------- | -----: | ------: | ---: | -----: | ---------: | ---------: | ---------: | ------------: | -------: | -------: | ------------: | ---------: |
+| 0                     |    164 |   56.36 |   96 |     68 |      58.54 |   8,406.82 |      51.26 |        209.07 | 1,030.20 | -1,338.46 |         1.087 |      1.025 |
+| 1                     |    127 |   43.64 |   40 |     87 |      31.50 | -13,326.96 |    -104.94 |       -999.68 | 1,985.68 | -1,032.28 |         0.884 |      2.499 |
+
+The difference was large enough to treat this as a meaningful filter.
+
+Trades **without** an open FVG in the range showed:
+- higher win rate,
+- positive total and average profit,
+- and a profit factor above 1.
+
+This suggested that leaving an unresolved imbalance in front of the trade often reduced the probability of clean target delivery, so I kept this condition as one of the strategy filters.
+
+<details>
+  <summary><b>How this filter was checked</b></summary>
+
+This comparison was produced from the trade dataset with features by grouping trades by `has_open_fvg_in_range` and comparing win rate, PnL, profit factor.
+
+If you want to check it yourself, you can use the CSV file together with this Jupyter notebook:  
+[Filter 1 notebook](images/strategy-research-and-development-case/Filter_Trouble_Area.ipynb)
+
+</details>
 ## Filter 2: RR to Extremum
 
 ## Result: Higher Win Rate, but Weak Expectancy
