@@ -245,7 +245,7 @@ This trade-features CSV dataset also makes it possible to apply **tabular machin
 | 2015.06.09 17:00:00 | 20 | EURUSD.TDS | 1.299953 | 2.142454 | 1.514296 | 0 | 2.839309 | 1 | 2458.94 |
 
 The full CSV file is also available here:  
-[Open full CSV](images/strategy-research-and-development-case/FVG_OB_2015-2025.csv)
+[Open full CSV](images/strategy-research-and-development-case/FVG_OB_2015-2026.csv)
 
 </details>
 
@@ -282,7 +282,7 @@ You can reproduce this check using the CSV file from the **Trade-Level Feature I
 
 From this point forward, I continue the analysis only on the subset of trades where there is no open opposite FVG between entry and target.
 
-Filtered dataset: [CSV_No_Open_FVG](images/strategy-research-and-development-case/FVG_OB_2015-2025_No_Open_Fvg.csv)
+Filtered dataset: [CSV_No_Open_FVG](images/strategy-research-and-development-case/FVG_OB_2015-2026_No_Open_Fvg.csv)
 
 ## Filter 2: RR to Extremum
 
@@ -311,7 +311,7 @@ I took the extended period **2005-2026**:
 | 1            |     91 |   30.13 |   73 |     18 |      80.22 |   3,030.23 |      33.30 |        256.69 |   289.45 | -1,005.54 |         1.167 |      0.304 |
 
 Good, the strategy looks more stable with this filter.  
-Let's keep developing this idea, subset further.
+Let's continue working with this subset.
 
 <details>
   <summary><b>How this filter was checked</b></summary>
