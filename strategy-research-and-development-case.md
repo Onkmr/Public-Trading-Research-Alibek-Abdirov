@@ -311,7 +311,7 @@ I took the extended period **2005-2026**:
 | 1            |     91 |   30.13 |   73 |     18 |      80.22 |   3,030.23 |      33.30 |        256.69 |   289.45 | -1,005.54 |         1.167 |      0.304 |
 
 Good, the strategy looks more stable with this filter.  
-Let's keep developing this idea further.
+Let's keep developing this idea, subset further.
 
 <details>
   <summary><b>How this filter was checked</b></summary>
@@ -319,10 +319,10 @@ Let's keep developing this idea further.
 This comparison was produced by splitting trades by the condition `rr_ext < 0.5` and comparing the main trading metrics for both groups.
 
 Files:
-- [CSV 2015-2026_RR<0.5](LINK_TO_FILE_1.csv)
-- [CSV 2005-2026_ALL](LINK_TO_FILE_2.csv)
-- [CSV 2005-2026_RR<0.5](LINK_TO_FILE_2.csv)
-- [Jupyter notebook-RR < 0.5](LINK_TO_NOTEBOOK.ipynb)
+- [CSV 2015-2026_RR<0.5](images/strategy-research-and-development-case/FVG_OB_2015-2026_RR_less_0.5.csv)
+- [CSV 2005-2026_ALL](images/strategy-research-and-development-case/FVG_OB_2005-2026.csv)
+- [CSV 2005-2026_RR<0.5](images/strategy-research-and-development-case/FVG_OB_2005-2026_RR_less_0.5.csv)
+- [Jupyter notebook-RR < 0.5](images/strategy-research-and-development-case/RR_ext_less_0.5.ipynb)
 
 </details>
 
