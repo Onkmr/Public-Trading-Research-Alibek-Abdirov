@@ -275,12 +275,13 @@ This suggested that leaving an unresolved imbalance in front of the trade often 
 
 This comparison was produced from the trade dataset with features by grouping trades by `has_open_fvg_in_range` and comparing win rate, PnL, profit factor.
 
-If you want to check it yourself, you can use the CSV file together with this Jupyter notebook:  
+Jupyter notebook, you can use it with CSV file from block Trade-Level Feature Infrastructure:  
 [Filter 1 notebook](images/strategy-research-and-development-case/Filter_Trouble_Area.ipynb)
 
 </details>
 
 From this point on, I will continue working only with the subset of trades where there is no open opposite FVG between entry and target.
+
 Here are dataset: [CSV_No_Open_FVG](images/strategy-research-and-development-case/FVG_OB_2015-2025_No_Open_Fvg.csv)
 
 ## Filter 2: RR to Extremum
