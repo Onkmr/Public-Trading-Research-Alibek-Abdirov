@@ -2,11 +2,11 @@
 
 This repository is a public extract of my systematic trading research.
 
-It demonstrates my approach to strategy development and validation, including:
+It demonstrates how I approach trading strategy research and development: starting from an initial idea, validating it manually, translating observations into structured features, and testing whether the resulting signals are selective enough for further development.
 
+The work presented here includes:
+
+- manual signal labeling for early-stage validation  
 - feature-based analysis and subset selection  
-- manual signal labeling for validation  
-- exploration of noise reduction techniques  
-- experimental use of computer vision in trading research  
-
-The focus is on understanding market behaviour, testing ideas critically, and building robust, data-driven insights rather than chasing overfitted metrics.
+- testing of noise-reduction and trade-filtering ideas  
+- experimental use of computer vision in strategy refinement
